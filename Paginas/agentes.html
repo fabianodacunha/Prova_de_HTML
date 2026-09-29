@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema Ordem Paranormal - Ficha de Personagem</title>
+    <meta name="author" content="Fabiano da Cunha Oliveira Junior">
+    <meta name="keywords" content="html">
+    <meta name="viewport" content="width=device-widht, initial-scale=1.0">
+    <time datetime="29/09/2026">
+</head>
+<body>
+    <header>
+        <h1>Criação de Personagem e Ficha</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início e Conceitos</a></li>
+                <li><a href="elementos.html">Atributos e Elementos</a></li>
+                <li><a href="agentes.html">Ficha e Agente</a></li>
+                <li><a href="rituais.html">Regras e Rituais</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 
+      Pagina da Ficha
+    -->
+
+    <main>
+        <section>
+            <h2>Formulário da Ficha do Agente</h2>
+            <form action="#" method="post">
+                <p>
+                    <label for="nome">Nome do Agente:</label><br>
+                    <input type="text" id="nome" name="nome" placeholder="Ex: Arthur Cervero" required>
+                </p>
+
+                <p>
+                    <label for="nascimento">Data de Ingresso na Ordo Realitas:</label><br>
+                    <input type="date" id="nascimento" name="nascimento" required>
+                </p>
+
+                <p>
+                    <label for="classe">Classe Escolhida:</label><br>
+                    <input type="text" id="classe" name="classe" list="classes-lista" placeholder="Selecione Combatente, Especialista ou Ocultista" required>
+                    <datalist id="classes-lista">
+                        <option value="Combatente">
+                        <option value="Especialista">
+                        <option value="Ocultista">
+                    </datalist>
+                </p>
+
+                <p>
+                    <label for="sanidade">Pontos de Sanidade Inicial (SAN):</label><br>
+                    <input type="range" id="sanidade" name="sanidade" min="0" max="100" value="100">
+                </p>
+
+                <p>
+                    <label for="documento">Upload do Retrato/Ficha (PDF ou Imagem):</label><br>
+                    <input type="file" id="documento" name="documento" required>
+                </p>
+
+                <p>
+                    <button type="submit">Gerar Agente</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <aside>
+        <h3>Dica de Atributos</h3>
+        <p>Atributos do sistema: Agilidade (AGI), Força (FOR), Intelecto (INT), Presença (PRE) e Vigor (VIG).</p>
+    </aside>
+
+    <footer>
+        <p>Guia de Regras Ordem Paranormal &copy; 2026 - Gerador de Personagens.</p>
+    </footer>
+</body>
+</html>
